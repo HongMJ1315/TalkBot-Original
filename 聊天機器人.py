@@ -1,30 +1,12 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import random
 
-
-# In[ ]:
-
-
 talk={}
-
-
-# In[ ]:
-
 
 def learn(key,val):
     if(not key in talk):
         talk[key]=[]
     print("已學習",key,val,end="\n\n")
     talk[key].append(val)
-
-
-# In[ ]:
-
 
 def forget(key):
     if(not key in talk or len(talk[key])==0):
@@ -34,24 +16,12 @@ def forget(key):
     print(talk[key][tmp],"已被忘記",end="\n\n")
     talk[key].remove(talk[key][tmp])
 
-
-# In[ ]:
-
-
-def htu():
+def GuideBook():
     print("歡迎使用Python聊天機器人\n聊天機器人使用格式如下\n學習 (關鍵字) (輸出)\n忘記 (關鍵字)\n呼叫使用說明請輸入(機器人)\n洗版請輸入(洗版)\n輸入時不要加括號",end="\n\n")
-
-
-# In[ ]:
-
 
 def wash():
     for i in range(1000):
         print()
-
-
-# In[ ]:
-
 
 def main(a):
     cut_str=a.split(" ", 2)
@@ -74,10 +44,6 @@ def main(a):
     else:
         print(cut_str[0],"尚未被學習",end="\n\n")
 
-
-# In[ ]:
-
-
 htu()
 try:
     while True:
@@ -85,10 +51,5 @@ try:
         main(a)
 except EOFError:
     pass
-
-
-# In[ ]:
-
-
 
 
