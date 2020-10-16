@@ -44,7 +44,7 @@ def main(a):
     else:
         print(cut_str[0],"尚未被學習",end="\n\n")
 
-htu()
+GuideBook()
 try:
     while True:
         a=input()
