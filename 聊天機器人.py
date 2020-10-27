@@ -17,7 +17,13 @@ def forget(key):
     talk[key].remove(talk[key][tmp])
 
 def GuideBook():
-    print("歡迎使用Python聊天機器人\n聊天機器人使用格式如下\n學習 (關鍵字) (輸出)\n忘記 (關鍵字)\n呼叫使用說明請輸入(機器人)\n洗版請輸入(洗版)\n輸入時不要加括號",end="\n\n")
+    print("歡迎使用Python聊天機器人\n \
+          聊天機器人使用格式如下\n \
+          學習 (關鍵字) (輸出)\n \
+          忘記 (關鍵字)\n \
+          呼叫使用說明請輸入(機器人)\n \
+          洗版請輸入(洗版)\n \
+          輸入時不要加括號",end="\n\n")
 
 def wash():
     for i in range(1000):
